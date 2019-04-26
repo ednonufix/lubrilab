@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="421.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cu.cupet.cubalub.controllers.CalculosCenizasController">
+   <children>
+      <Label layoutX="31.0" layoutY="42.0" text="\% por masa" />
+      <TextField fx:id="text_fijarmasa" layoutX="119.0" layoutY="37.0" />
+      <Label layoutX="401.0" layoutY="42.0" text="Resultados por elementos" />
+      <Button fx:id="btn_fijar" layoutX="139.0" layoutY="72.0" mnemonicParsing="false" onAction="#fijar_masa" text="Fijar % de masa" />
+      <Label layoutX="31.0" layoutY="136.0" text="Seleccione elemento" />
+      <ComboBox fx:id="combo_elemento" layoutX="24.0" layoutY="163.0" prefWidth="150.0" />
+      <Label layoutX="201.0" layoutY="136.0" text="\% de masa del elemento" />
+      <TextField fx:id="text_masa_elemento" layoutX="197.0" layoutY="163.0" />
+      <Button fx:id="btn_calcular" layoutX="248.0" layoutY="212.0" mnemonicParsing="false" onAction="#calc_temp" text="Calcular" />
+      <Button fx:id="btn_final" layoutX="24.0" layoutY="299.0" mnemonicParsing="false" onAction="#calculo_final" text="Resultado Final" />
+      <TextField fx:id="text_final" layoutX="197.0" layoutY="299.0" />
+      <TableView fx:id="tabla_temp" layoutX="386.0" layoutY="76.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="tabla_col_elemento" prefWidth="100.0" text="Elemento" />
+          <TableColumn fx:id="tabla_col_resultado" prefWidth="99.0" text="Resultado" />
+        </columns>
+      </TableView>
+      <Separator layoutX="-1.0" layoutY="351.0" prefHeight="0.0" prefWidth="600.0" />
+      <Button fx:id="btn_cerrar" layoutX="509.0" layoutY="368.0" mnemonicParsing="false" onAction="#cerrarCalculo" text="Cerrar" />
+   </children>
+</AnchorPane>

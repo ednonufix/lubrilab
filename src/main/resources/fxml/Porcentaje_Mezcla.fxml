@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cu.cupet.cubalub.controllers.PorcentajeMezclaController">
+   <children>
+      <Button layoutX="344.0" layoutY="341.0" mnemonicParsing="false" onAction="#cerrarPorcentajeMezcla" text="Cerrar" />
+      <Button fx:id="btn_calcular" layoutX="83.0" layoutY="287.0" mnemonicParsing="false" onAction="#calcularPorcentaje" text="Calcular" />
+      <Separator layoutY="333.0" prefHeight="0.0" prefWidth="412.0" />
+      <Label layoutX="38.0" layoutY="24.0" text="Viscosidad Aceite 1" />
+      <TextField fx:id="text_aceite1" layoutX="170.0" layoutY="19.0" prefHeight="26.0" prefWidth="161.0" />
+      <Label layoutX="38.0" layoutY="71.0" text="Viscosidad Aceite 2" />
+      <TextField fx:id="text_aceite2" layoutX="170.0" layoutY="66.0" prefHeight="26.0" prefWidth="161.0" />
+      <Label alignment="CENTER" layoutX="38.0" layoutY="115.0" text="Viscosidad deseada" />
+      <TextField fx:id="text_viscosidad_deseada" layoutX="170.0" layoutY="110.0" prefHeight="26.0" prefWidth="161.0" />
+      <Label layoutX="78.0" layoutY="159.0" text="Temperatura" />
+      <Spinner fx:id="temperatura" editable="true" layoutX="170.0" layoutY="154.0" prefHeight="26.0" prefWidth="161.0" />
+      <Label layoutX="63.0" layoutY="201.0" text="Resultado % A1" />
+      <TextField fx:id="text_resultado_a1" editable="false" layoutX="170.0" layoutY="196.0" prefHeight="26.0" prefWidth="161.0">
+         <tooltip>
+            <Tooltip text="Porcentaje del Aceite 1 a mezclar" />
+         </tooltip></TextField>
+      <Button fx:id="btn_reiniciar" layoutX="276.0" layoutY="287.0" mnemonicParsing="false" onAction="#reset" text="Reiniciar" />
+      <Label layoutX="63.0" layoutY="245.0" text="Resultado % A2" />
+      <TextField fx:id="text_resultado_a2" editable="false" layoutX="170.0" layoutY="240.0" prefHeight="26.0" prefWidth="161.0">
+         <tooltip>
+            <Tooltip text="Porcentaje del Aceite 2 a mezclar" />
+         </tooltip></TextField>
+   </children>
+</AnchorPane>

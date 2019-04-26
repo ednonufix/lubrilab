@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="356.0" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cu.cupet.cubalub.controllers.IV100Controller">
+   <children>
+      <Button layoutX="292.0" layoutY="223.0" mnemonicParsing="false" onAction="#cerrarIV" text="Cerrar" />
+      <Button fx:id="btn_calcular" layoutX="77.0" layoutY="157.0" mnemonicParsing="false" onAction="#calcularIV" text="Calcular" />
+      <Separator layoutY="209.0" prefHeight="0.0" prefWidth="356.0" />
+      <Label layoutX="23.0" layoutY="24.0" text="Indice de Viscosidad" />
+      <TextField fx:id="text_ivvisco" layoutX="164.0" layoutY="19.0" />
+      <Label layoutX="15.0" layoutY="62.0" text="Viscosidad cSt a 40ºC" />
+      <TextField fx:id="text_visco_40" layoutX="164.0" layoutY="57.0" />
+      <Label layoutX="9.0" layoutY="103.0" text="Viscosidad cSt a 100ºC" />
+      <TextField fx:id="text_resultado" editable="false" layoutX="164.0" layoutY="98.0" />
+      <Button fx:id="btn_reiniciar" layoutX="258.0" layoutY="157.0" mnemonicParsing="false" onAction="#reset" text="Reiniciar" />
+   </children>
+</AnchorPane>
